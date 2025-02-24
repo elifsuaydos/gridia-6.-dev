@@ -28,6 +28,65 @@ a {
 }
 
 /*=================== NAV ===================*/
+.nav_header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2f4d76;
+  z-index: 99999;
+  transition: box-shadow .4s;
+  align-content: center;
+  color: #ffffff;
+}
+
+.nav{
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_link{
+ margin-right: 2rem;
+ margin-left: 2rem;
+ position: relative;
+}
+
+#nav-name{
+  font-size: xx-large;
+  font-weight: normal;
+}
+
+.nav_logo{
+  font-size: 25px;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #ffffff;
+}
+
+.nav_link::after{
+  content: '';
+  width: 0;
+  height: 2.5px;
+  background: #FFD700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width .4s ;
+}
+
+.nav_link:hover::after{
+  width: 100%;
+}
+
 
 /*=================== MAIN ===================*/
 
