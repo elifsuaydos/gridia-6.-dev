@@ -89,27 +89,29 @@ a {
 
 
 /*=================== MAIN ===================*/
+
 .sofa{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 50px 130px;
-  min-height: 400px;
+  justify-content: space-between;
+  padding: 50px 10%;
+  min-height: 80vh;
 }
 
 .sofa2{
-  max-width: 450px;
+  max-width: 45%;
 }
 
 .title{
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .parag{
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 30px;
+  line-height: 1.5;
 }
 
 .shop{
@@ -126,8 +128,27 @@ a {
   border-color: #FFD700;
 }
 
-.image{
-  height:  5px;
-  width:   5px;
+.image {
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+.dots {
+    position: absolute;
+    top: 26%;
+    right: 10%;
+    width: 250px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, transparent 20%);
+    background-size: 25px 25px;
+    z-index: 0;
+}
+
 /*=================== RESPONSIVE DESIGN ===================*/
